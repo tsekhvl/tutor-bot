@@ -1,0 +1,506 @@
+{
+  "questions": [
+    {
+      "id": "demo_hijra",
+      "seminar": "1",
+      "type": "choice",
+      "prompt": "В каком году совершена хиджра — переселение Мухаммада из Мекки в Медину?",
+      "options": [
+        {"id": "a", "text": "610 г.", "correct": false},
+        {"id": "b", "text": "622 г.", "correct": true},
+        {"id": "c", "text": "632 г.", "correct": false},
+        {"id": "d", "text": "661 г.", "correct": false}
+      ],
+      "hint": "Это начало мусульманского летоисчисления",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_caliph",
+      "seminar": "1",
+      "type": "choice",
+      "prompt": "Кто стал первым праведным халифом после смерти пророка Мухаммада?",
+      "options": [
+        {"id": "a", "text": "Умар ибн аль-Хаттаб", "correct": false},
+        {"id": "b", "text": "Абу Бакр", "correct": true},
+        {"id": "c", "text": "Али ибн Абу Талиб", "correct": false},
+        {"id": "d", "text": "Усман ибн Аффан", "correct": false}
+      ],
+      "hint": "Самый старший сподвижник, правление 632–634",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_death",
+      "seminar": "1",
+      "type": "choice",
+      "prompt": "В каком году умер пророк Мухаммад?",
+      "options": [
+        {"id": "a", "text": "622 г.", "correct": false},
+        {"id": "b", "text": "632 г.", "correct": true},
+        {"id": "c", "text": "656 г.", "correct": false},
+        {"id": "d", "text": "610 г.", "correct": false}
+      ],
+      "hint": "Не путать с хиджрой",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_madhhab",
+      "seminar": "2",
+      "type": "choice",
+      "prompt": "Какая из перечисленных школ НЕ входит в четыре основных суннитских мазхаба?",
+      "options": [
+        {"id": "a", "text": "Ханафитский", "correct": false},
+        {"id": "b", "text": "Маликитский", "correct": false},
+        {"id": "c", "text": "Шафиитский", "correct": false},
+        {"id": "d", "text": "Имамитский", "correct": true}
+      ],
+      "hint": "Один из вариантов — шиитское течение",
+      "difficulty": 2,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_kharijites",
+      "seminar": "2",
+      "type": "choice",
+      "prompt": "С каким событием связывают появление хариджитов?",
+      "options": [
+        {"id": "a", "text": "Битва при Кербеле (680)", "correct": false},
+        {"id": "b", "text": "Битва при Сиффине и арбитраж (657)", "correct": true},
+        {"id": "c", "text": "Захват Мекки (630)", "correct": false},
+        {"id": "d", "text": "Падение Багдада (1258)", "correct": false}
+      ],
+      "hint": "Они выступили против соглашения Али с Муавией",
+      "difficulty": 2,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_ikta",
+      "seminar": "2",
+      "type": "choice",
+      "prompt": "Что такое икта в Египте айюбидов и мамлюков?",
+      "options": [
+        {"id": "a", "text": "Пожизненное условное владение землёй в обмен на службу", "correct": true},
+        {"id": "b", "text": "Налог на немусульман", "correct": false},
+        {"id": "c", "text": "Военный лагерь мамлюков", "correct": false},
+        {"id": "d", "text": "Судебный приказ султана", "correct": false}
+      ],
+      "hint": "Сходство с феодом",
+      "difficulty": 2,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_harun",
+      "seminar": "2",
+      "type": "choice",
+      "prompt": "«Золотой век» аббасидской культуры чаще всего ассоциируют с правлением…",
+      "options": [
+        {"id": "a", "text": "Абу Бакра", "correct": false},
+        {"id": "b", "text": "Харуна ар-Рашида", "correct": true},
+        {"id": "c", "text": "Салах ад-Дина", "correct": false},
+        {"id": "d", "text": "Тимура", "correct": false}
+      ],
+      "hint": "Двор «Тысячи и одной ночи»",
+      "difficulty": 1,
+      "tags": ["millionaire", "bosses"]
+    },
+    {
+      "id": "demo_hattin",
+      "seminar": "2",
+      "type": "choice",
+      "prompt": "Битва при Хаттине (победа Салах ад-Дина) — это…",
+      "options": [
+        {"id": "a", "text": "1099 г.", "correct": false},
+        {"id": "b", "text": "1187 г.", "correct": true},
+        {"id": "c", "text": "1258 г.", "correct": false},
+        {"id": "d", "text": "632 г.", "correct": false}
+      ],
+      "hint": "Конец XII в., не 1099",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_mozarabs",
+      "seminar": "2",
+      "type": "choice",
+      "prompt": "Как называли христиан аль-Андалуса, арабизированных, но сохранивших культ?",
+      "options": [
+        {"id": "a", "text": "Мозарабы", "correct": true},
+        {"id": "b", "text": "Мамлюки", "correct": false},
+        {"id": "c", "text": "Мавали", "correct": false},
+        {"id": "d", "text": "Хариджиты", "correct": false}
+      ],
+      "hint": "Христиане мусульманской Испании",
+      "difficulty": 2,
+      "tags": ["millionaire", "bosses"]
+    },
+    {
+      "id": "demo_suez",
+      "seminar": "3",
+      "type": "choice",
+      "prompt": "Суэцкий канал был открыт в…",
+      "options": [
+        {"id": "a", "text": "1798 г.", "correct": false},
+        {"id": "b", "text": "1869 г.", "correct": true},
+        {"id": "c", "text": "1914 г.", "correct": false},
+        {"id": "d", "text": "1956 г.", "correct": false}
+      ],
+      "hint": "Вторая половина XIX века",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_nasser",
+      "seminar": "3",
+      "type": "choice",
+      "prompt": "Гамаль Абдель Насер наиболее известен как…",
+      "options": [
+        {"id": "a", "text": "Основатель Саудовской Аравии", "correct": false},
+        {"id": "b", "text": "Лидер Египта и символ панарабизма середины XX в.", "correct": true},
+        {"id": "c", "text": "Автор Декларации Бальфура", "correct": false},
+        {"id": "d", "text": "Султан Османской империи", "correct": false}
+      ],
+      "hint": "Египет, ОАР, 1950–60-е",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_balfour",
+      "seminar": "3",
+      "type": "choice",
+      "prompt": "Декларация Бальфура (1917) связана с…",
+      "options": [
+        {"id": "a", "text": "Независимостью Алжира", "correct": false},
+        {"id": "b", "text": "Поддержкой создания «национального очага» для евреев в Палестине", "correct": true},
+        {"id": "c", "text": "Созданием ОПЕК", "correct": false},
+        {"id": "d", "text": "Кэмп-Дэвидом", "correct": false}
+      ],
+      "hint": "Британская политика в Палестине",
+      "difficulty": 2,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_sixday",
+      "seminar": "3",
+      "type": "choice",
+      "prompt": "Шестидневная война произошла в…",
+      "options": [
+        {"id": "a", "text": "1948 г.", "correct": false},
+        {"id": "b", "text": "1967 г.", "correct": true},
+        {"id": "c", "text": "1973 г.", "correct": false},
+        {"id": "d", "text": "1991 г.", "correct": false}
+      ],
+      "hint": "Накса, не путать с 1973",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_campdavid",
+      "seminar": "3",
+      "type": "choice",
+      "prompt": "Кэмп-Дэвидские соглашения — это мир между…",
+      "options": [
+        {"id": "a", "text": "Ираком и Кувейтом", "correct": false},
+        {"id": "b", "text": "Египтом и Израилем", "correct": true},
+        {"id": "c", "text": "Сирией и Турцией", "correct": false},
+        {"id": "d", "text": "Саудовской Аравией и Йеменом", "correct": false}
+      ],
+      "hint": "Конец 1970-х, Садат",
+      "difficulty": 1,
+      "tags": ["millionaire"]
+    },
+    {
+      "id": "demo_open_religions",
+      "seminar": "1",
+      "type": "open",
+      "tags": ["caravan"],
+      "prompt": "Назовите любую религию (кроме ислама), распространённую в Аравии до проповеди Мухаммада.",
+      "rubric": "Зачёт: язычество/политеизм, иудаизм, христианство, зороастризм и т.п.",
+      "hint": "Доисламская Аравия",
+      "difficulty": 1
+    },
+    {
+      "id": "demo_open_persia",
+      "seminar": "1",
+      "type": "open",
+      "tags": ["caravan", "bosses"],
+      "prompt": "Какой империей на Востоке в основном овладели арабы в VII в.? Кратко.",
+      "rubric": "Зачёт: Сасанидская Персия/Иран.",
+      "difficulty": 1
+    },
+    {
+      "id": "demo_open_husayn",
+      "seminar": "2",
+      "type": "open",
+      "tags": ["caravan"],
+      "prompt": "Кто такой Хусейн ибн Али и почему он важен для шиизма? (2–3 предложения)",
+      "rubric": "Внук пророка; Кербела 680; мученичество / Ашура.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_open_mamluks",
+      "seminar": "2",
+      "type": "open",
+      "tags": ["caravan"],
+      "prompt": "Кто такие мамлюки и как власть перешла к ним в Египте? (кратко)",
+      "rubric": "Военные рабы/корпус; переворот около 1250; правящая элита Египта.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_open_nasser",
+      "seminar": "3",
+      "type": "open",
+      "tags": ["caravan"],
+      "prompt": "Кто такой Гамаль Абдель Насер? Назовите 1–2 ключевых факта.",
+      "rubric": "Лидер Египта; панарабизм; ОАР; Суэцкий кризис / национализация канала — достаточно общего смысла.",
+      "difficulty": 1
+    },
+    {
+      "id": "demo_open_sykes",
+      "seminar": "3",
+      "type": "open",
+      "tags": ["caravan"],
+      "prompt": "Что такое соглашение Сайкса — Пико? (1–2 предложения)",
+      "rubric": "Секретный раздел османских арабских провинций между Британией и Францией ( Persвая мировая).",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_open_nakba",
+      "seminar": "3",
+      "type": "open",
+      "tags": ["caravan"],
+      "prompt": "Что такое Накба в контексте 1948 г.?",
+      "rubric": "Катастрофа / исход палестинских арабов при создании Израиля и войне 1948.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_fallback_hijra",
+      "seminar": "1",
+      "type": "open",
+      "tags": ["caravan", "fallback"],
+      "prompt": "В каком году хиджра? Ответьте одной фразой.",
+      "rubric": "Зачёт: 622 г.",
+      "difficulty": 1
+    },
+    {
+      "id": "demo_fallback_baghdad",
+      "seminar": "2",
+      "type": "open",
+      "tags": ["caravan", "fallback"],
+      "prompt": "Назовите столицу аббасидского халифата в «золотой век».",
+      "rubric": "Зачёт: Багдад.",
+      "difficulty": 1
+    },
+    {
+      "id": "demo_fallback_suez",
+      "seminar": "3",
+      "type": "open",
+      "tags": ["caravan", "fallback"],
+      "prompt": "В каком веке открыли Суэцкий канал?",
+      "rubric": "Зачёт: XIX век / 1869.",
+      "difficulty": 1
+    },
+    {
+      "id": "demo_deb_isolation",
+      "seminar": "1",
+      "type": "debate",
+      "tags": ["bosses", "debate"],
+      "thesis": "До пророка Мухаммада Аравия была полностью изолирована от внешнего мира — только язычество без связей.",
+      "prompt": "Опровергните тезис об изоляции доисламской Аравии.",
+      "rubric": "Торговые пути, иудеи/христиане, влияние Византии и Персии, паломничество в Мекку.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_deb_loot",
+      "seminar": "1",
+      "type": "debate",
+      "tags": ["bosses", "debate"],
+      "thesis": "Арабские завоевания VII в. были чистой жаждой наживы — ислам тут ни при чём.",
+      "prompt": "Опровергните тезис о «только наживе».",
+      "rubric": "Джихад, миссия, ридда, халифат, сочетание интересов и идеологии.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_deb_abbasid",
+      "seminar": "2",
+      "type": "debate",
+      "tags": ["bosses", "debate"],
+      "thesis": "Аббасиды только разрушали науку: Багдад был военным лагерем без культуры.",
+      "prompt": "Опровергните тезис об «антинауке» аббасидов.",
+      "rubric": "Бейт аль-хикма, переводы, астрономия, медицина, урбанизация.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_deb_andalus",
+      "seminar": "2",
+      "type": "debate",
+      "tags": ["bosses", "debate"],
+      "thesis": "В аль-Андалусе христиане и иудеи жили в полном равноправии с мусульманами — как в современном секулярном государстве.",
+      "prompt": "Опровергните тезис о «полном равноправии».",
+      "rubric": "Димма, джизья, иерархия, периоды гонений и сотрудничества — без анахронизма.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_deb_mamluks",
+      "seminar": "2",
+      "type": "debate",
+      "tags": ["bosses", "debate"],
+      "thesis": "Мамлюки были безвольными наёмниками и никогда сами не правили Египтом.",
+      "prompt": "Опровергните тезис о «безвольных наёмниках».",
+      "rubric": "Переворот 1250, династия мамлюков, Бейбарс, военная монархия.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_deb_panarab",
+      "seminar": "3",
+      "type": "debate",
+      "tags": ["bosses", "debate"],
+      "thesis": "Панарабизм Насера был только пропагандой и не имел реальных политических последствий.",
+      "prompt": "Опровергните тезис о «только пропаганде».",
+      "rubric": "ОАР, влияние на регион, Суэц, идеология vs практика — нюансы, не отрицание влияния.",
+      "difficulty": 2
+    },
+    {
+      "id": "demo_deb_oslo",
+      "seminar": "3",
+      "type": "debate",
+      "tags": ["bosses", "debate"],
+      "thesis": "Соглашения в Осло сразу решили палестино-израильский конфликт.",
+      "prompt": "Опровергните тезис о «сразу решили».",
+      "rubric": "Процесс, частичные договорённости, неполный суверенитет, последующие срывы и интифада.",
+      "difficulty": 2
+    }
+  ],
+  "caravan": {
+    "pass_min": 0,
+    "stops": [
+      {
+        "id": "stop_medina",
+        "city": "Медина",
+        "seminar": "1",
+        "event_text": "🐪 DEMO: Медина — доисламская Аравия и ранняя история ислама.",
+        "question_ids": ["demo_open_religions"],
+        "fallback_question_ids": ["demo_fallback_hijra"]
+      },
+      {
+        "id": "stop_kufa",
+        "city": "Куфа",
+        "seminar": "1",
+        "event_text": "📜 DEMO: завоевания VII века.",
+        "question_ids": ["demo_open_persia"],
+        "fallback_question_ids": ["demo_fallback_hijra"]
+      },
+      {
+        "id": "stop_baghdad",
+        "city": "Багдад",
+        "seminar": "2",
+        "event_text": "🏛 DEMO: аббасидский «золотой век» и расколы.",
+        "question_ids": ["demo_open_husayn"],
+        "fallback_question_ids": ["demo_fallback_baghdad"]
+      },
+      {
+        "id": "stop_cordoba",
+        "city": "Кордова",
+        "seminar": "2",
+        "event_text": "🌴 DEMO: аль-Андалус (открытый вопрос через мамлюков/Египет как соседняя тема).",
+        "question_ids": ["demo_open_mamluks"],
+        "fallback_question_ids": ["demo_fallback_baghdad"]
+      },
+      {
+        "id": "stop_cairo",
+        "city": "Каир",
+        "seminar": "2",
+        "event_text": "🏰 DEMO: мамлюки и Египет.",
+        "question_ids": ["demo_open_mamluks"],
+        "fallback_question_ids": ["demo_fallback_baghdad"]
+      },
+      {
+        "id": "stop_suez",
+        "city": "Суэц",
+        "seminar": "3",
+        "event_text": "🚢 DEMO: XIX–XX вв., канал и колониальный контекст.",
+        "question_ids": ["demo_open_sykes"],
+        "fallback_question_ids": ["demo_fallback_suez"]
+      },
+      {
+        "id": "stop_cairo_modern",
+        "city": "Каир (XX в.)",
+        "seminar": "3",
+        "event_text": "📻 DEMO: Насер, панарабизм, Накба.",
+        "question_ids": ["demo_open_nasser", "demo_open_nakba"],
+        "fallback_question_ids": ["demo_fallback_suez"]
+      }
+    ]
+  },
+  "bosses": [
+    {
+      "id": "boss_01",
+      "seminar": "1",
+      "name": "Старейшина оазиса",
+      "opponent": "Старейшина караван-сарая",
+      "debate_ids": ["demo_deb_isolation"]
+    },
+    {
+      "id": "boss_02",
+      "seminar": "1",
+      "name": "Военачальник завоеваний",
+      "opponent": "Ветеран футух",
+      "debate_ids": ["demo_deb_loot"]
+    },
+    {
+      "id": "boss_03",
+      "seminar": "2",
+      "name": "Кади Багдада",
+      "opponent": "Придворный кади",
+      "debate_ids": ["demo_deb_abbasid"]
+    },
+    {
+      "id": "boss_04",
+      "seminar": "2",
+      "name": "Эмир Кордовы",
+      "opponent": "Визирь аль-Андалуса",
+      "debate_ids": ["demo_deb_andalus"]
+    },
+    {
+      "id": "boss_05",
+      "seminar": "2",
+      "name": "Султан мамлюков",
+      "opponent": "Эмир халки",
+      "debate_ids": ["demo_deb_mamluks"]
+    },
+    {
+      "id": "boss_06",
+      "seminar": "3",
+      "name": "Радио Каира",
+      "opponent": "Комментатор панарабизма",
+      "debate_ids": ["demo_deb_panarab"]
+    },
+    {
+      "id": "boss_07",
+      "seminar": "3",
+      "name": "Дипломат Осло",
+      "opponent": "Оптимист мирного процесса",
+      "debate_ids": ["demo_deb_oslo"]
+    }
+  ],
+  "millionaire": {
+    "full_score_at": 14,
+    "steps": [
+      {"step": 1, "seminar": "1", "question_ids": ["demo_hijra", "demo_caliph", "demo_death"]},
+      {"step": 2, "seminar": "2", "question_ids": ["demo_madhhab", "demo_harun"]},
+      {"step": 3, "seminar": "2", "question_ids": ["demo_kharijites", "demo_mozarabs"]},
+      {"step": 4, "seminar": "2", "question_ids": ["demo_ikta", "demo_hattin"]},
+      {"step": 5, "seminar": "3", "question_ids": ["demo_suez", "demo_balfour"]},
+      {"step": 6, "seminar": "3", "question_ids": ["demo_nasser", "demo_sixday"]},
+      {"step": 7, "seminar": "3", "question_ids": ["demo_campdavid", "demo_hattin"]},
+      {"step": 8, "seminar": "1", "question_ids": ["demo_hijra", "demo_death"]},
+      {"step": 9, "seminar": "2", "question_ids": ["demo_madhhab", "demo_harun"]},
+      {"step": 10, "seminar": "2", "question_ids": ["demo_kharijites", "demo_ikta"]},
+      {"step": 11, "seminar": "3", "question_ids": ["demo_suez", "demo_nasser"]},
+      {"step": 12, "seminar": "3", "question_ids": ["demo_balfour", "demo_sixday"]},
+      {"step": 13, "seminar": "3", "question_ids": ["demo_campdavid", "demo_mozarabs"]},
+      {"step": 14, "seminar": "1", "question_ids": ["demo_caliph", "demo_death"]}
+    ]
+  }
+}

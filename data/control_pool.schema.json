@@ -1,0 +1,56 @@
+{
+  "_comment": "Пример структуры вопроса для control_pool.json (файл не читается ботом)",
+  "questions": [
+    {
+      "id": "ex_choice_01",
+      "seminar": "12",
+      "type": "choice",
+      "prompt": "Текст вопроса",
+      "options": [
+        {"id": "a", "text": "Вариант A", "correct": false},
+        {"id": "b", "text": "Вариант B", "correct": true}
+      ],
+      "hint": "Подсказка для режима «факих»",
+      "difficulty": 2,
+      "tags": ["shiism"]
+    },
+    {
+      "id": "ex_open_01",
+      "seminar": "14",
+      "type": "open",
+      "prompt": "Почему мусульманский мир был политически фрагментирован накануне I крестового похода?",
+      "rubric": "Ожидается: слабость халифата, распад власти, междоусобицы, события 1092–1094; не обязательно дословно.",
+      "hint": "Вспомни семинар 14 и Хилленбранд",
+      "difficulty": 3
+    }
+  ],
+  "caravan": {
+    "pass_seals": 7,
+    "stops": [
+      {
+        "id": "stop_medina_1",
+        "city": "Медина",
+        "seminar": "9",
+        "event_text": "Короткий сюжет остановки (опционально).",
+        "question_id": "ex_choice_01",
+        "fallback_question_id": "ex_open_01"
+      }
+    ]
+  },
+  "bosses_config": {"hp_start": 5, "pass_defeated": 4},
+  "bosses": [
+    {
+      "id": "boss_shiism",
+      "seminar": "12",
+      "name": "Хариджит на Сиффине",
+      "phase_question_ids": [["ex_choice_01"], ["ex_open_01"]]
+    }
+  ],
+  "millionaire": {
+    "pass_step": 10,
+    "cashout_steps": [6, 9],
+    "steps": [
+      {"step": 1, "seminar": "9", "question_id": "ex_choice_01"}
+    ]
+  }
+}
