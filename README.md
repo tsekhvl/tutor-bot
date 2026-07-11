@@ -1,6 +1,6 @@
 # Tutor Bot
 
-Telegram-бот для курса по истории Ближнего Востока / исламоведению: **сдача отработок**, **интерактивная контрольная**, **тренажёр к устному экзамену** и **проверка сносок** (для преподавателя). Проверка через Vertex Gemini; опционально — запись баллов в Google Sheets и журнал в SQLite.
+Telegram bot for a Middle East / Islamic studies course: **homework make-ups**, **interactive midterm**, **oral-exam coach**, and a **teacher citation checker**. Answers are graded with Vertex Gemini; grades can sync to Google Sheets, with an optional SQLite submission log.
 
 > Portfolio snapshot with **demo content only**. The full course pack is not published.
 
@@ -35,9 +35,9 @@ Student picks block → assignment type → seminar → answer. Gemini checks ag
 Owner-only. Send a `.docx` with classic Word footnotes. The bot:
 
 1. Parses footnotes + paragraph context (segment before each marker)  
-2. Prefetches URLs from footnote text (HTTP title/snippet/status)  
+2. Prefetches URLs from footnote text (HTTP title / snippet / status)  
 3. Asks Gemini + Google Search whether the source likely exists and matches the claim  
-4. Returns a short Telegram summary, an **annotated copy** with Word comments on flagged footnotes, and a **flagged-only table** (`существует` / `не существует` / `нуждается в перепроверке`)
+4. Returns a short Telegram summary, an **annotated copy** with Word comments on flagged footnotes, and a **flagged-only table** (`exists` / `does not exist` / `needs re-check`)
 
 Package: `citation/` (`docx_footnotes`, `url_fetch`, `checker`, `annotate_docx`, `handlers`).
 
