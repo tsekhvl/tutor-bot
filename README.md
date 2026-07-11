@@ -2,6 +2,8 @@
 
 Telegram bot for a Middle East / Islamic studies course: **homework make-ups**, **interactive midterm**, **oral-exam coach**, and a **teacher citation checker**. Answers are graded with Vertex Gemini; grades can sync to Google Sheets, with an optional SQLite submission log.
 
+**Live bot:** [@dz_tsekh_bot](https://t.me/dz_tsekh_bot)
+
 > Portfolio snapshot with **demo content only**. The full course pack is not published.
 
 ## Problem
