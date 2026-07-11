@@ -4,6 +4,10 @@ Telegram bot for a Middle East / Islamic studies course: **homework make-ups**, 
 
 > Portfolio snapshot with **demo content only**. The full course pack is not published.
 
+## Problem
+
+Course work piles up in chat: make-up essays, midterms, exam prep, and student papers with shaky footnotes. Checking all of that by hand is slow and uneven. Tutor Bot turns those flows into structured Telegram sessions — students practice and submit, Gemini grades against fixed criteria, and the teacher gets Sheets/SQLite logs plus a DOCX citation review instead of hunting sources manually.
+
 ## Highlights (what to look at)
 
 ### 1. Interactive control — `/control`
