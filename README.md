@@ -1,6 +1,6 @@
 # Tutor Bot
 
-Telegram-бот для курса по истории Ближнего Востока / исламоведению: **сдача отработок**, **интерактивная контрольная** и **тренажёр к устному экзамену**. Проверка через Vertex Gemini; опционально — запись баллов в Google Sheets и журнал в SQLite.
+Telegram-бот для курса по истории Ближнего Востока / исламоведению: **сдача отработок**, **интерактивная контрольная**, **тренажёр к устному экзамену** и **проверка сносок** (для преподавателя). Проверка через Vertex Gemini; опционально — запись баллов в Google Sheets и журнал в SQLite.
 
 > Portfolio snapshot with **demo content only**. The full course pack is not published.
 
@@ -30,9 +30,20 @@ Demo pools: `data/exam_train_block1.json`, `data/exam_train_block3.json`.
 
 Student picks block → assignment type → seminar → answer. Gemini checks against criteria in `assignments.json`. Accepted work can be written to Sheets (block 1 / block 3 spreadsheets).
 
-### 4. Ops
+### 4. Citation check for teachers — `/check_ai`
 
-- SQLite submission log; owner commands `/submissions_stats`, `/export_submissions`  
+Owner-only. Send a `.docx` with classic Word footnotes. The bot:
+
+1. Parses footnotes + paragraph context (segment before each marker)  
+2. Prefetches URLs from footnote text (HTTP title/snippet/status)  
+3. Asks Gemini + Google Search whether the source likely exists and matches the claim  
+4. Returns a short Telegram summary, an **annotated copy** with Word comments on flagged footnotes, and a **flagged-only table** (`существует` / `не существует` / `нуждается в перепроверке`)
+
+Package: `citation/` (`docx_footnotes`, `url_fetch`, `checker`, `annotate_docx`, `handlers`).
+
+### 5. Ops
+
+- SQLite submission log; owner commands `/submissions_stats`, `/export_submissions`, `/check_ai`  
 - Deploy scripts + systemd unit (see `DEPLOY.md`)
 
 ## Stack
@@ -40,22 +51,28 @@ Student picks block → assignment type → seminar → answer. Gemini checks ag
 | Layer | Tech |
 |-------|------|
 | Bot | Python, `python-telegram-bot` |
-| AI | Vertex Gemini (`google-cloud-aiplatform` / genai) |
+| AI | Vertex Gemini (`google-cloud-aiplatform` / `google-genai`) |
 | Grades | Google Sheets (`gspread`) |
 | Journal | SQLite |
+| DOCX | `python-docx` + OOXML parse/annotate |
 | Content | JSON pools (`assignments.json`, `control_pool.json`, `exam_train_*.json`) |
 
 ```mermaid
 flowchart TD
   student[Student in Telegram]
+  teacher[Teacher owner]
   student --> hw["/start homework"]
   student --> ctl["/control"]
   student --> exam["/exam"]
+  teacher --> cite["/check_ai docx"]
   hw --> gemini[Gemini check]
   ctl --> engines[Caravan / Bosses / Faqih]
   engines --> gemini
   exam --> coach[Exam coach + follow-up]
   coach --> gemini
+  cite --> prefetch[URL prefetch]
+  prefetch --> geminiSearch[Gemini + Google Search]
+  geminiSearch --> annotated[Word comments + table]
   gemini --> sheets[Google Sheets optional]
   gemini --> sqlite[SQLite journal]
 ```

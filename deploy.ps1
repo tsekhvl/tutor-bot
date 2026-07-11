@@ -16,6 +16,7 @@ $FILES = @(
     "storage",
     "control",
     "exam_train",
+    "citation",
     "data",
     "tutor-bot.service",
     "setup-server.sh",

@@ -13,7 +13,11 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 GOOGLE_PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID", "")
 GOOGLE_LOCATION = os.getenv("GOOGLE_LOCATION", "global")
 # Vertex Gemini. Avoid gemini-2.0-flash in us-central1 (often 404).
-TUTOR_GEMINI_MODEL = os.getenv("TUTOR_GEMINI_MODEL", "gemini-3-flash-preview")
+TUTOR_GEMINI_MODEL = os.getenv("TUTOR_GEMINI_MODEL", "gemini-3.5-flash")
+# Thinking for /check_ai (google-genai): low | medium | high | off
+TUTOR_GEMINI_THINKING_LEVEL = os.getenv(
+    "TUTOR_GEMINI_THINKING_LEVEL", "low"
+).strip().lower()
 _DEFAULT_CREDENTIALS = Path(__file__).parent / "my-project-key.json"
 GOOGLE_CREDENTIALS_PATH = os.getenv("GOOGLE_APPLICATION_CREDENTIALS") or (
     str(_DEFAULT_CREDENTIALS) if _DEFAULT_CREDENTIALS.exists() else ""

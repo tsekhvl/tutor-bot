@@ -45,7 +45,7 @@ cd d:\path\to\tutor
 ```powershell
 cd d:\path\to\tutor
 ssh root@YOUR_VPS_HOST "mkdir -p /opt/tutor_bot/data"
-scp -r main.py config.py requirements.txt assignments.json bot ai sheets storage tutor-bot.service setup-server.sh .env.example root@YOUR_VPS_HOST:/opt/tutor_bot/
+scp -r main.py config.py requirements.txt assignments.json bot ai sheets storage control exam_train citation data tutor-bot.service setup-server.sh .env.example root@YOUR_VPS_HOST:/opt/tutor_bot/
 ```
 
 Ключ Google (отдельно, не в git):
@@ -116,8 +116,8 @@ systemctl status tutor-bot -l --no-pager
 
 ## Шаг 7. Проверка
 
-- Студент: `/start` → сдача задания  
-- Владелец: **`/stats`**, **`/export_submissions`** (журнал SQLite)
+- Студент: `/start` → сдача задания; `/control`; `/exam`  
+- Владелец: **`/stats`**, **`/export_submissions`**, **`/check_ai`** (docx со сносками)
 
 Логи:
 

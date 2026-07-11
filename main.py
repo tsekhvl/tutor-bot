@@ -5,6 +5,7 @@ from telegram import Update
 from telegram.ext import Application, CallbackQueryHandler, CommandHandler, MessageHandler, filters
 
 from bot import cmd_export_submissions, cmd_submissions_stats, handle_text, start
+from citation import citation_handle_document, cmd_check_ai
 from control import cmd_control, control_handle_callback
 from exam_train import cmd_exam, exam_handle_callback, exam_handle_voice
 from config import TELEGRAM_BOT_TOKEN, TUTOR_SQLITE_ENABLED, TUTOR_SQLITE_PATH
@@ -43,6 +44,8 @@ def main() -> None:
     app.add_handler(
         CommandHandler(["export_submissions", "export_db"], cmd_export_submissions)
     )
+    app.add_handler(CommandHandler(["check_ai", "citations", "check_citations"], cmd_check_ai))
+    app.add_handler(MessageHandler(filters.Document.ALL, citation_handle_document))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
 
     logger.info("Бот запущен")
